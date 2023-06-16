@@ -19,3 +19,11 @@ erDiagram
         Email Email
     }
 ```
+It also demonstates how to use the $ref feature in a Nox yaml definition
+```
+domain:
+  entities:
+    - $ref: person.entity.nox.yaml
+    
+    - $ref: contact.entity.nox.yaml
+```
