@@ -1,0 +1,15 @@
+#
+# NoxYamlTest.solution.nox.yaml
+#
+# xyaml-language-server: $schema=https://noxorg.dev/schemas/solution.json
+#
+
+name: NoxYamlTest
+
+description: A sample Nox enabled microservice
+  
+domain:
+  entities:
+    - $ref: person.entity.nox.yaml
+    
+    - $ref: contact.entity.nox.yaml

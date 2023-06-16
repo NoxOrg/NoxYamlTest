@@ -1,0 +1,31 @@
+#
+# Contact Entity
+#
+# xyaml-language-server: $schema=https://noxorg.dev/schemas/entity.json
+#
+
+name: Contact
+description: a way of contacting a person
+
+keys:
+  - name: Id
+    type: autoNumber
+
+attributes:
+  - name: Name
+    description: The name of the contact i.e. Primary, holiday, after hours
+    type: text
+    textTypeOptions:
+      minLength: 3
+      maxLength: 30
+
+  - name: PhoneNumber
+    description: The phone number to contact the person
+    type: phoneNumber
+    textTypeOptions:
+      minLength: 3
+      maxLength: 10
+
+  - name: Email
+    description: The email address to contact the person
+    type: email

@@ -1,0 +1,33 @@
+#
+# Person Entity
+#
+# xyaml-language-server: $schema=https://noxorg.dev/schemas/entity.json
+#
+
+name: Person
+description: a model of a person
+
+keys:
+  - name: Id
+    type: autoNumber
+
+attributes:
+  - name: Name
+    description: The name of the person
+    type: text
+    textTypeOptions:
+      minLength: 3
+      maxLength: 30
+
+  - name: LastName
+    description: The last name of the person
+    type: text
+    textTypeOptions:
+      minLength: 3
+      maxLength: 30
+
+ownedRelationships:
+  - name: PersonContacts
+    description: contacted at
+    relationship: zeroOrMany
+    entity: Contact
