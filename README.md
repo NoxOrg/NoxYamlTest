@@ -4,7 +4,7 @@ a sample repo that demonstates how the Nox.solution yaml definition can be used 
 The yaml definition is in the .nox/design folder.
 
 It produces the following model:
-'''mermaid
+```mermaid
 erDiagram
     Person {
         AutoNumber Id PK
@@ -18,4 +18,4 @@ erDiagram
         PhoneNumber PhoneNumber
         Email Email
     }
-'''
+```
